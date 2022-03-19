@@ -1,7 +1,8 @@
 ; ----------------------------------------------------------------------------------------------------
-; file: helloworldGUI.asm
+; file: helloworld32GUI.asm
 ; description: A simple program written in 32 bits that display in GUI an Hello World!
 ; ----------------------------------------------------------------------------------------------------
+
 
 %define NULL 0
 %define MB_OK 0
@@ -30,5 +31,5 @@ section .data									; Initialized variables area
 	tit db "Example in GUI", NULL				; Prompt Title
 	msg db "Hello World!", NULL					; Hello World message
 ; ----------------------------------------------------------------------------------------------------
-; compiler: nasm -fwin32 -ohelloworldGUI.obj helloworldGUI.asm && gcc -m32 -mwindows -ohelloworldGUI.exe helloworldGUI.obj
+; compiler: nasm -fwin32 -ohelloworld32GUI.obj helloworld32GUI.asm && gcc -m32 -mwindows -ohelloworld32GUI.exe helloworld32GUI.obj
 ; ----------------------------------------------------------------------------------------------------

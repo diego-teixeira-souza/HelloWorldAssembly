@@ -1,5 +1,5 @@
 ; ----------------------------------------------------------------------------------------------------
-; file: helloworld.asm
+; file: helloworld32.asm
 ; description: A simple program in 32 bits that display in console an Hello World!
 ; ----------------------------------------------------------------------------------------------------
 
@@ -19,5 +19,5 @@ section .text									; Code section
 		add		esp, 4							; Remove from stack the message
 		ret										; Return control to system
 ; ----------------------------------------------------------------------------------------------------
-; compiler: nasm -fwin32 helloworld.asm -o helloworld.obj && gcc -m32 helloworld.obj -ohelloworld.exe && helloworld.exe
+; compiler: nasm -fwin32 helloworld32.asm -o helloworld32.obj && gcc -m32 helloworld32.obj -ohelloworld32.exe && helloworld32.exe
 ; ----------------------------------------------------------------------------------------------------
